@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valor da Milha — Relatório Diário</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: #f6f7f9; color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+.wrap { max-width: 920px; margin: 0 auto; padding: 24px 20px 48px; }
+header h1 { font-size: 22px; margin: 0 0 4px; }
+.updated { color: #667085; font-size: 13px; margin: 0 0 20px; }
+.updated b { color: #1a1a1a; }
+section { background: #fff; border: 1px solid #e6e8eb; border-radius: 12px; padding: 18px 20px; margin-bottom: 20px; }
+h2 { font-size: 16px; margin: 0 0 4px; }
+.sub { color: #667085; font-size: 12.5px; margin: 0 0 14px; }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+th, td { text-align: left; padding: 9px 8px; border-bottom: 1px solid #eef0f2; }
+th { color: #667085; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .02em; }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+.prog { font-weight: 600; }
+.tag { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 20px; background: #eef2ff; color: #4338ca; margin-left: 6px; }
+.trend-up { color: #027a48; }
+.trend-down { color: #b42318; }
+.trend-flat { color: #667085; }
+.sources { font-size: 12.5px; color: #475467; }
+.sources a { color: #3538cd; text-decoration: none; }
+.sources a:hover { text-decoration: underline; }
+.note { font-size: 12px; color: #667085; margin-top: 8px; }
+footer { font-size: 11.5px; color: #98a2b3; text-align: center; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>✈️ Valor da Milha — Relatório Diário</h1>
+    <p class="updated">Atualizado em <b>23/07/2026</b> · Fontes coletadas automaticamente às 09h00</p>
+  </header>
+
+  <section>
+    <h2>Programas Nacionais 🇧🇷</h2>
+    <p class="sub">Preço de mercado do milheiro (compra/venda) — R$ por 1.000 milhas. Valores oscilam com promoções.</p>
+    <table>
+      <thead>
+        <tr><th>Programa</th><th>Cia</th><th>Milheiro (R$)</th><th>Tendência</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="prog">LATAM Pass</td><td>LATAM</td><td class="num">R$ 29 – 35</td><td class="trend-flat">— estável</td></tr>
+        <tr><td class="prog">Smiles</td><td>GOL</td><td class="num">R$ 17 – 22</td><td class="trend-flat">— estável</td></tr>
+        <tr><td class="prog">TudoAzul</td><td>Azul</td><td class="num">R$ 15 – 17</td><td class="trend-flat">— estável</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Referência: cotações de compra/venda nas plataformas do mercado brasileiro.</p>
+  </section>
+
+  <section>
+    <h2>Programas Internacionais 🌎</h2>
+    <p class="sub">Valor de resgate estimado por milha/ponto. Convertido para R$/milheiro ao câmbio US$ 1 = R$ 5,08 (22/07/2026).</p>
+    <table>
+      <thead>
+        <tr><th>Programa</th><th>Cia / Aliança</th><th>Valor (¢ US$)</th><th>R$ / milheiro</th><th>Obs.</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="prog">AAdvantage</td><td>American (Oneworld)</td><td class="num">~1,6¢</td><td class="num">~R$ 81</td><td>Web Specials</td></tr>
+        <tr><td class="prog">Aeroplan</td><td>Air Canada (Star)</td><td class="num">~1,4 – 1,6¢</td><td class="num">~R$ 71 – 81</td><td>Devalorização jun/26</td></tr>
+        <tr><td class="prog">LATAM Pass (intl)</td><td>LATAM (Oneworld)</td><td class="num">~1,2 – 1,4¢</td><td class="num">~R$ 61 – 71</td><td>Preço dinâmico</td></tr>
+        <tr><td class="prog">MileagePlus</td><td>United (Star)</td><td class="num">~1,5¢</td><td class="num">~R$ 76</td><td>Parceiros Star</td></tr>
+        <tr><td class="prog">Avios</td><td>British Airways (Oneworld)</td><td class="num">~1,3 – 1,4¢</td><td class="num">~R$ 66 – 71</td><td>0,5–2,0p p/ resgate</td></tr>
+        <tr><td class="prog">Miles &amp; Smiles</td><td>Turkish (Star)</td><td class="num">~1,1 – 1,3¢</td><td class="num">~R$ 56 – 66</td><td>Sweet spots</td></tr>
+        <tr><td class="prog">SkyMiles</td><td>Delta (SkyTeam)</td><td class="num">~1,1¢</td><td class="num">~R$ 56</td><td>Sem tabela fixa</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Valores internacionais = <b>valor de resgate</b> (quanto a milha rende ao emitir), não preço de compra. Preço dinâmico: o valor real depende da rota e da classe. Câmbio recalculado a cada execução.</p>
+  </section>
+
+  <section>
+    <h2>Fontes monitoradas</h2>
+    <p class="sources">
+      <b>Nacionais:</b>
+      <a href="https://cotacaomilhas.com.br/">Cotação Milhas</a> ·
+      <a href="https://e-milhas.com/cotacao">E-milhas</a> ·
+      <a href="https://compromilhas.com/">Compro Milhas</a> ·
+      <a href="https://www.melhoresdestinos.com.br/milhas/valor-milheiro-azul-latam-smiles-2026">Melhores Destinos</a> ·
+      <a href="https://www.heymiles.com.br/blog/preco-milheiro-smiles-latam-azul-2026">HeyMiles</a>
+      <br><br>
+      <b>Internacionais:</b>
+      <a href="https://thepointsguy.com/loyalty-programs/monthly-valuations/">The Points Guy (valuations mensais)</a> ·
+      <a href="https://www.nerdwallet.com/travel/learn/airline-miles-and-hotel-points-valuations">NerdWallet</a> ·
+      <a href="https://upgradedpoints.com/travel/points-and-miles-valuations/">Upgraded Points</a> ·
+      <a href="https://onemileatatime.com/guides/value-miles-points/">One Mile at a Time</a> ·
+      <a href="https://frequentmiler.com/airline-miles-worth/">Frequent Miler</a>
+    </p>
+  </section>
+
+  <footer>Relatório gerado automaticamente · buscando sempre as publicações mais recentes</footer>
+</div>
+</body>
+</html>
